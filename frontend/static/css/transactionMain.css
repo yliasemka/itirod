@@ -1,0 +1,262 @@
+* {
+  text-decoration: none;
+  font-family: "Montserrat";
+  text-rendering: optimizeLegibility;
+}
+main {
+  position: absolute;
+  height: 100%;
+  right: 244px;
+  left: 244px;
+  padding-bottom: 9%;
+}
+.add-button {
+  position: absolute;
+  cursor: pointer;
+  width: 50%;
+  height: 56px;
+  top: 50px;
+  left: 20px;
+  border: none;
+  text-align: left;
+  background: #eebbc3;
+  border-radius: 50px;
+}
+.add-button:hover,
+.add-button:focus,
+.expenses-button:hover,
+.expenses-button:focus,
+.str__delete-img-button:hover,
+.str__delete-img-button:focus {
+  opacity: 0.8;
+  outline-color: #ecb2ba;
+}
+.incomes-button:hover,
+.incomes-button:focus,
+.str__settings-img-button:hover,
+.str__settings-img-button:focus {
+  background-color: #d4d8f06c;
+  outline-color: #eebbc3;
+}
+
+.add-button__img {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  margin-left: 20px;
+}
+
+.add-button p {
+  margin-left: 68px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+main h2 {
+  position: absolute;
+  width: 91px;
+  height: 29px;
+  left: 20px;
+  top: 192px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1f1f1f;
+}
+
+.incomes-button {
+  position: absolute;
+  cursor: pointer;
+  width: 287px;
+  height: 55px;
+  left: 20px;
+  top: 251px;
+  text-align: left;
+  background-color: #d4d8f02f;
+  border: none;
+  border-radius: 50px;
+}
+
+.incomes-button p {
+  margin-left: 33px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.expenses-button {
+  position: absolute;
+  cursor: pointer;
+  width: 287px;
+  text-align: left;
+  height: 55px;
+  left: 330px;
+  top: 251px;
+  border: none;
+  background: #eebbc3;
+  border-radius: 50px;
+}
+
+.expenses-button p {
+  margin-left: 43px;
+  font-weight: 600;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.categories-table {
+  width: 800px;
+  margin-top: 136px;
+  margin-left: 20px;
+  background: #ffffff;
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04),
+    0px 0px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 19px;
+  border-collapse: collapse;
+}
+
+.main-table {
+  width: 800px;
+  margin-top: 336px;
+  margin-left: 20px;
+  background: #ffffff;
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04),
+    0px 0px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 19px;
+  border-collapse: collapse;
+}
+.main-table__str {
+  height: 50px;
+  padding-bottom: 10px;
+  border-bottom: 0.5px solid #ececec;
+}
+.str__del,
+.str__set {
+  width: 50px;
+}
+th,
+td {
+  text-align: left;
+  margin: 0.5em 1em;
+}
+th {
+  font-weight: 400;
+  font-size: 14px;
+  color: #aeaeae;
+  height: 92px;
+  text-align: left;
+}
+.str__first-cl {
+  color: #ecb2ba;
+}
+td:nth-child(2) {
+  padding-left: 15px;
+}
+.str__shop-img {
+  width: 20.4px;
+  height: 20.4px;
+  background: #efefef;
+  border-radius: 4px;
+}
+.settings-img {
+  width: 20px;
+  height: 20px;
+}
+
+.str__settings-img-button,
+.str__settings-img-buttonC {
+  cursor: pointer;
+  border: none;
+  width: 30px;
+  height: 30px;
+  right: 65px;
+  top: 1.24px;
+  border-radius: 20px;
+  background: #efefef;
+}
+
+.delete-img {
+  width: 20px;
+  height: 20px;
+}
+
+.str__delete-img-button,
+.str__delete-img-buttonC {
+  cursor: pointer;
+  border: none;
+  width: 30px;
+  height: 30px;
+  right: 25px;
+  top: 1.24px;
+  border-radius: 20px;
+  background: #eebbc3;
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+  main {
+    width: 100%;
+    right: 0;
+    left: 0;
+  }
+  main h2 {
+    position: absolute;
+    left: 10%;
+  }
+  .add-button {
+    width: 80%;
+    left: 10%;
+    top: 120px;
+    position: absolute;
+  }
+  .incomes-button {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+  }
+  .expenses-button {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    top: 315px;
+    border: none;
+    background: #eebbc3;
+    border-radius: 50px;
+  }
+  .main-table,
+  .categories-table {
+    margin-top: 430px;
+    width: 80%;
+    margin-left: 10%;
+  }
+  .categories-table {
+    margin-top: 230px;
+  }
+  .str__delete-img-button {
+    position: absolute;
+    left: 65%;
+    top: 390px;
+  }
+  .str__delete-img-buttonC {
+    position: absolute;
+    left: 65%;
+    top: 190px;
+  }
+  .str__settings-img-button {
+    position: absolute;
+    left: 75%;
+    top: 390px;
+  }
+  .str__settings-img-buttonC {
+    position: absolute;
+    left: 75%;
+    top: 190px;
+  }
+  .td-date,
+  .str__second-cl {
+    visibility: hidden;
+  }
+  .str__del,
+  .str__set {
+    width: 0px;
+  }
+}

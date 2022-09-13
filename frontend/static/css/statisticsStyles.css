@@ -1,0 +1,199 @@
+* {
+  text-decoration: none;
+  font-family: "Montserrat";
+}
+main {
+  position: absolute;
+  height: 100%;
+  right: 244px;
+  left: 244px;
+}
+.table-stat {
+  margin: 20% auto auto 20%;
+}
+.q-graph {
+  display: block;
+  position: relative;
+  width: 600px;
+  height: 300px;
+  margin: 1.1em 0 0;
+  padding: 0;
+  background: transparent;
+  font-size: 11px;
+}
+.box__inputi {
+  border: #b8c1ec;
+  border-radius: 5%;
+  width: 160px;
+}
+.q-graph caption {
+  caption-side: top;
+  width: 600px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  top: -40px;
+  position: relative;
+  z-index: 10;
+  font-weight: bold;
+}
+.q-graph tr,
+.q-graph th,
+.q-graph td {
+  position: absolute;
+  bottom: 0;
+  width: 150px;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.chart__canvas-wrapper {
+  width: 747px;
+  height: 392px;
+  border: 1px solid #b3d5fc;
+  border-radius: 5px;
+}
+.q-graph td {
+  transition: all 0.3s ease;
+}
+.q-graph caption {
+  text-align: left;
+}
+
+.box__input:focus,
+.box__input:hover {
+  outline-color: #eebbc3;
+}
+.q-graph td:hover {
+  background-color: #4d4d4d;
+  opacity: 0.9;
+  color: white;
+}
+.q-graph thead tr {
+  left: 50%;
+  top: 100%;
+  bottom: auto;
+  margin-top: 50px;
+}
+.q-graph thead th {
+  width: 7.5em;
+  height: auto;
+  padding: 0.5em 1em;
+}
+.q-graph thead th.sent {
+  top: 0;
+  left: 0;
+  line-height: 2;
+}
+.q-graph thead th.paid {
+  top: 2.75em;
+  line-height: 2;
+  left: 0;
+}
+.q-graph tbody tr {
+  height: 296px;
+  padding-top: 2px;
+  border-right: 1px dotted #c4c4c4;
+  color: #aaa;
+}
+.qtr1 {
+  left: 0;
+}
+.qtr2 {
+  left: 150px;
+}
+.qtr3 {
+  left: 300px;
+}
+.qtr4 {
+  left: 450px;
+  border-right: none;
+}
+.qtr1 .bar {
+  height: 111px;
+  color: #eebbc3;
+}
+.qtr1 .paid {
+  height: 99px;
+}
+.qtr2 .bar {
+  height: 206px;
+}
+.qtr2 .paid {
+  height: 194px;
+}
+.qtr3 .bar {
+  height: 259px;
+}
+.qtr3 .paid {
+  height: 193px;
+}
+.qtr4 .bar {
+  height: 110px;
+}
+.qtr4 .paid {
+  height: 195px;
+}
+.q-graph tbody th {
+  bottom: -1.75em;
+  vertical-align: top;
+  font-weight: normal;
+  color: #333;
+}
+.q-graph .bar {
+  width: 60px;
+  border: 1px solid;
+  border-bottom: none;
+  color: #000;
+}
+.q-graph .bar p {
+  margin: 10px 0 0;
+  padding: 0;
+  opacity: 0.4;
+}
+.q-graph .sent {
+  left: 13px;
+  background-color: #eebbc3;
+  border-color: transparent;
+  border-radius: 15px 15px 0px 0px;
+  color: #eebbc3;
+}
+.q-graph .paid {
+  left: 77px;
+  background-color: #b8c1ec;
+  border-color: transparent;
+  border-radius: 15px 15px 0px 0px;
+  color: #b8c1ec;
+}
+.ticks {
+  position: relative;
+  top: -300px;
+  left: 2px;
+  width: 596px;
+  height: 300px;
+  z-index: 1;
+  margin-bottom: -300px;
+  font-size: 10px;
+  font-family: "fira-sans-2", Verdana, sans-serif;
+}
+.tick {
+  position: relative;
+  border-bottom: 1px dotted #c4c4c4;
+  width: 600px;
+  height: 59px;
+}
+.tick p {
+  position: absolute;
+  left: -5em;
+  top: -0.8em;
+  margin: 0 0 0 0.5em;
+}
+@media screen and (max-aspect-ratio: 1/1) {
+  main {
+    left: 0;
+    width: 100%;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+  }
+}

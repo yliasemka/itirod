@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinTrack</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <link rel="stylesheet" href="./static/css/header.css" />
+    <link rel="stylesheet" href="./static/css/footer.css" />
+    <link rel="stylesheet" href="./static/css/section.css" />
+    <link rel="stylesheet" href="./static/css/transactionMain.css" />
+    <link rel="stylesheet" href="./static/css/statisticsStyles.css" />
+    <link rel="stylesheet" href="./static/css/style.css" />
+  </head>
+
+  <body>
+    <header id="nav-header" class="nav-header">
+      <div class="left_side">
+        <button class="left_side__button">
+          <img class="left_side__img" src="/static/images/menu.svg" />
+        </button>
+        <h1>FinTrack</h1>
+      </div>
+      <nav class="side-nav">
+        <ul class="side-nav__ul">
+          <li class="side-nav__li">
+            <div class="side-nav__str">
+              <button class="side-nav__log-button">
+                <img
+                  class="side-nav__logout-img"
+                  src="/static/images/transaction.svg"
+                />
+              </button>
+              <a class="side-nav__a__active" href="index.html">Transaction</a>
+            </div>
+          </li>
+          <li class="side-nav__li">
+            <div class="side-nav__str">
+              <button class="side-nav__log-button">
+                <img
+                  class="side-nav__logout-img"
+                  src="/static/images/categories.svg"
+                />
+              </button>
+              <a class="side-nav__a" href="Categories.html">Categories</a>
+            </div>
+          </li>
+          <li class="side-nav__li">
+            <div class="side-nav__str">
+              <button class="side-nav__log-button">
+                <img
+                  class="side-nav__logout-img"
+                  src="/static/images/statistics.svg"
+                />
+              </button>
+              <a class="side-nav__b" href="Statistics.html">Statistics</a>
+            </div>
+          </li>
+          <hr />
+          <li class="side-nav__li">
+            <div class="side-nav__str">
+              <a href="#log-body" class="side-nav__log-button">
+                <img
+                  class="side-nav__logout-imgl"
+                  src="/static/images/logout.svg"
+                />
+              </a>
+              <a class="side-nav__p" href="#log-body">Log out</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="app"></main>
+    <section class="right-section">
+      <div class="right-section_ins">
+        <img
+          class="right-section__person-img"
+          src="/static/images/person.svg"
+        />
+        <p class="right-section__name">Loading...</p>
+        <div class="right-section__current-amount">
+          <p class="current-amount__title">Current amount</p>
+          <p class="current-amount__count">Loading...</p>
+          <p class="current-amount__date">Jan 2 , 12:31pm</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Designed by Elena Barkovskaya, 2022</p>
+    </footer>
+    <div id="sign-body" class="sign-body">
+      <a href="#nav-header" class="close_form"></a>
+      <div class="box">
+        <header>
+          <p>SIGN UP</p>
+        </header>
+
+        <p class="box__p_muted">Please create your username and password</p>
+
+        <form class="box__form" autocomplete="off" method="POST">
+          <input class="box__input" placeholder="Username" required />
+
+          <input
+            class="box__input"
+            type="password"
+            placeholder="Password"
+            maxlength="80"
+            required
+          />
+          <p class="validation1"></p>
+          <a class="box__a_signup" href="#log-body">Back to login</a>
+          <a class="box__button_submit" href="#nav-header" id="submit__signup"
+            >Sign up</a
+          >
+        </form>
+      </div>
+    </div>
+    <div id="log-body" class="sign-body">
+      <a href="#nav-header" class="close_form"></a>
+      <div class="box">
+        <header>
+          <p>LOG IN</p>
+        </header>
+
+        <p class="box__p_muted">Please enter your login and password</p>
+
+        <form class="box__form" autocomplete="off" method="POST">
+          <input
+            class="box__input"
+            type="text"
+            placeholder="Username"
+            required
+          />
+
+          <input
+            class="box__input"
+            type="password"
+            placeholder="Password"
+            maxlength="80"
+            required
+          />
+          <p class="validation"></p>
+          <a class="box__a_signup" href="#sign-body"
+            >Sign up if you don't have an account</a
+          >
+
+          <a class="box__button_submit" id="submit__login">Log in</a>
+        </form>
+      </div>
+    </div>
+
+    <div id="addform">
+      <a href="#nav-header" class="close_form"></a>
+      <div class="box">
+        <header>
+          <p>ADD</p>
+        </header>
+
+        <p class="box__p_muted">Please enter data</p>
+
+        <form class="box__form" id="addForm" autocomplete="off" method="POST">
+          <input
+            class="box__input"
+            type="number"
+            placeholder="Amount"
+            maxlength="15"
+            required
+          />
+          <input
+            class="box__input"
+            placeholder="Date"
+            maxlength="15"
+            required
+          />
+          <select
+            class="box__input"
+            id="box__input__select"
+            name="nubexSelect"
+            required
+            form="addForm"
+          ></select>
+
+          <div class="wrapper">
+            <input type="radio" name="select" id="option-1" checked />
+            <input type="radio" name="select" id="option-2" />
+            <label for="option-1" class="option option-1">
+              <div class="dot"></div>
+              <span>Incomes</span>
+            </label>
+            <label for="option-2" class="option option-2">
+              <div class="dot"></div>
+              <span>Expenses</span>
+            </label>
+          </div>
+          <p class="validationT"></p>
+          <a class="box__button_submit" id="submit__addTrans"
+            >Add transaction</a
+          >
+        </form>
+      </div>
+    </div>
+    <div id="addCatform">
+      <a href="#nav-header" class="close_form"></a>
+      <div class="box">
+        <header>
+          <p>ADD</p>
+        </header>
+
+        <p class="box__p_muted">Please enter data</p>
+
+        <form class="box__form" id="addForm" autocomplete="off" method="POST">
+          <input
+            class="box__input"
+            placeholder="Name"
+            maxlength="15"
+            required
+          />
+          <p class="validationC"></p>
+          <a class="box__button_submit" id="submit__addCateg">Add category</a>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="/static/js/index.js"></script>
+    <script type="module" src="/static/login.js"></script>
+    <script type="module" src="/static/signup.js"></script>
+    <script type="module" src="/static/js/storage.js"></script>
+    <script type="module" src="/static/js/mainTransaction.js"></script>
+  </body>
+</html>

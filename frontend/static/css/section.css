@@ -1,0 +1,61 @@
+.right-section {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 9%;
+  z-index: 999;
+  background-color: #d4d8f02f;
+  width: 244px;
+  overflow: auto;
+}
+.right-section__name {
+  color: #232946;
+  margin-top: 0px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.right-section__person-img {
+  height: 150px;
+  width: 150px;
+  margin: 39px;
+  opacity: 0.7;
+}
+.right-section__current-amount {
+  background: #ffffff;
+  box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  width: 218px;
+  height: 97px;
+  margin: auto;
+  text-align: left;
+}
+.current-amount__title {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  padding-top: 15px;
+  margin: 40px auto auto 20px;
+  color: #eebbc3;
+}
+.current-amount__count {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  margin: 5px auto auto 20px;
+  color: #333333;
+}
+.current-amount__date {
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+  margin: 15px auto auto 20px;
+  color: #bdbdbd;
+}
+@media screen and (max-aspect-ratio: 1/1) {
+  .right-section {
+    visibility: hidden;
+  }
+}
